@@ -19,7 +19,13 @@ $(document).ready(function() {
     $.each($('.blah'), function() {
       if (collision($('#monjoueur'), $(this))) {
         $(this).remove();
-        console.log("collision!");
+        score --;
+        console.log(score);
+        if (score == 0) {
+          $('#monjoueur').remove();
+          $('#boutonaccescv').show();
+          //window.location.replace('C:\Users\User\Desktop\JeuCV\index2.html');
+        }
       }
     });
   }, 200);

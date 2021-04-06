@@ -5,6 +5,7 @@ var pikachu2 = document.getElementsByClassName("monjoueur");
 var y = monairedejeu.style.height - 30;
 var dx = 2;
 var dy = -2;
+var score = 30;
 niveaudejeu = 1;
 
 function p() {
